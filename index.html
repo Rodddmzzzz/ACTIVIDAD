@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Página principal</title>
+    <style>
+        body{
+            background-color: #B3E5FC;
+            font-family: arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        h1, h2{
+            text-align: center;
+        }
+        ol{
+            list-style: none;
+            padding-left: 0;
+            display: inline-block;
+            text-align: left;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+
+        li::before{
+            content: counter(item);
+            counter-increment: item;
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            background-color: #0288D1;
+            color: white;
+            border-radius: 5px;
+            margin-right: 10px;
+            transition: all 0.3s ease;
+            vertical-align: middle;
+            font-weight: bold;
+        }
+        ol{
+            counter-reset: item;
+        }
+        li:nth-child(1):hover::before{
+            content: "Tabla básica";
+            white-space: nowrap;
+            width: auto;
+            padding: 5px 10px;
+        }
+        li:nth-child(2):hover::before{
+            content: "Tabla nombre de países";
+            white-space: nowrap;
+            width: auto;
+            padding: 5px 10px;
+        }
+        li:nth-child(3):hover::before{
+            content: "Título en la tabla ";
+            white-space: nowrap;
+            width: auto;
+            padding: 5px 10px;
+        }
+        li:nth-child(4):hover::before{
+            content: "Tabla con título (caption) ";
+            white-space: nowrap;
+            width: auto;
+            padding: 5px 10px;
+        }
+        li:nth-child(5):hover::before{
+            content: "Tabla con el ATRIBUTO SCOPE ";
+            white-space: nowrap;
+            width: auto;
+            padding: 5px 10px;
+        }
+        li:nth-child(6):hover::before{
+            content: "Tabla con celdas texto e imágenes enlazadas. ";
+            white-space: nowrap;
+            width: auto;
+            padding: 5px 10px;
+        }
+        li:nth-child(7):hover::before{
+            content: "Tabla y combinación de celdas. colspan y rowspan ";
+            white-space: nowrap;
+            width: auto;
+            padding: 5px 10px;
+        }
+        li:nth-child(8):hover::before{
+            content: "Elementos thead, tbody y tfoot ";
+            white-space: nowrap;
+            width: auto;
+            padding: 5px 10px;
+        }
+        li:nth-child(9):hover::before{
+            content: "Propiedad CSS border ";
+            white-space: nowrap;
+            width: auto;
+            padding: 5px 10px;
+        }
+        li:nth-child(10):hover::before{
+            content: "Propiedad CSS border-spacing ";
+            white-space: nowrap;
+            width: auto;
+            padding: 5px 10px;
+        }
+        li:nth-child(11):hover::before{
+            content: "Propiedad CSS border-collapse ";
+            white-space: nowrap;
+            width: auto;
+            padding: 5px 10px;
+        }
+        li:nth-child(12):hover::before{
+            content: "Propiedad CSS width permite definir el ancho de una tabla. ";
+            white-space: nowrap;
+            width: auto;
+            padding: 5px 10px;
+        }
+        li:nth-child(13):hover::before{
+            content: "Elementos thead, tbody y tfoot con CSS ";
+            white-space: nowrap;
+            width: auto;
+            padding: 5px 10px;
+        }
+        li:nth-child(14):hover::before{
+            content: "Grupo de música Queen";
+            white-space: nowrap;
+            width: auto;
+            padding: 5px 10px;
+        }
+
+        p {
+            margin-top: 40px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Página principal</h1>
+    <h2>Actividad 06</h2>
+    <ol>
+        <li><a href="ejercicio1.html">Ejercicio 1</a></li>
+        <li><a href="ejercicio2.html">Ejercicio 2</a></li>
+        <li><a href="ejercicio3.html">Ejercicio 3</a></li>
+        <li><a href="ejercicio4.html">Ejercicio 4</a></li>
+        <li><a href="ejercicio5.html">Ejercicio 5</a></li>
+        <li><a href="ejercicio6.html">Ejercicio 6</a></li>
+        <li><a href="ejercicio7.html">Ejercicio 7</a></li>
+        <li><a href="ejercicio8.html">Ejercicio 8</a></li>
+        <li><a href="ejercicio9.html">Ejercicio 9</a></li>
+        <li><a href="ejercicio10.html">Ejercicio 10</a></li>
+        <li><a href="ejercicio11.html">Ejercicio 11</a></li>
+        <li><a href="ejercicio12.html">Ejercicio 12</a></li>
+        <li><a href="ejercicio13.html">Ejercicio 13</a></li>
+        <li><a href="ejercicio14.html">Ejercicio 14</a></li>
+    </ol>
+    <p><strong>Autor:</strong> Rodrigo Ubaldo Ramirez Mendoza</p>
+</body>
+</html>
